@@ -13,7 +13,13 @@ git review
 Render the template
 -------------------
 
-Use reclass_tools from [1] to render the template.
+Use reclass_tools from [1] to render the template:
+
+```
+virtualenv venv-reclass
+. venv-reclass/bin/activate
+pip install git+http://github.com/dis-xcom/reclass-tools
+```
 
 <env_name> : any name for newly created environment model
 <path_to_template> : path to the directory with the cookiecutter template, for example 'tcp-qa/tcp_tests/environment/environment_template'
